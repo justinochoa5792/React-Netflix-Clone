@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Switch>
         <Route exact path="/" component={Main} />
       </Switch>
