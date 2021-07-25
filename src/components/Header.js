@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import "../css/App.css";
 import logo from "../svg/logo.svg";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Icon } from "react-icons-kit";
 import { ic_keyboard_arrow_right } from "react-icons-kit/md/ic_keyboard_arrow_right";
 import Button from "./Button";
@@ -13,9 +13,9 @@ class Header extends Component {
       <HeaderComponent className="header-container">
         <div className="header-top">
           <Logo src={logo} alt="Netflix" />
-          <NavLink className="signIn-btn" to="#">
+          <Link className="signIn-btn" to="/login">
             Sign In
-          </NavLink>
+          </Link>
         </div>
         <div className="header-content">
           <Title>See what's next.</Title>
